@@ -1,0 +1,28 @@
+
+	public void onModuleLoad() {
+		RootPanel rootPanel = RootPanel.get();
+		
+		LayoutPanel layoutPanel = new LayoutPanel();
+		rootPanel.add(layoutPanel, 10, 0);
+		layoutPanel.setSize("430px", "290px");
+		
+		Label lblName = new Label("Name");
+		layoutPanel.add(lblName);
+		layoutPanel.setWidgetLeftWidth(lblName, 40.0, Unit.PX, 56.0, Unit.PX);
+		layoutPanel.setWidgetTopHeight(lblName, 50.0, Unit.PX, 16.0, Unit.PX);
+		
+		TextBox nameTextBox = new TextBox();
+		layoutPanel.add(nameTextBox);
+		layoutPanel.setWidgetLeftWidth(nameTextBox, 83.0, Unit.PX, 108.0, Unit.PX);
+		layoutPanel.setWidgetTopHeight(nameTextBox, 38.0, Unit.PX, 28.0, Unit.PX);
+		
+		Label lblDob = new Label("DOB");
+		layoutPanel.add(lblDob);
+		layoutPanel.setWidgetLeftWidth(lblDob, 40.0, Unit.PX, 56.0, Unit.PX);
+		layoutPanel.setWidgetTopHeight(lblDob, 129.0, Unit.PX, 16.0, Unit.PX);
+		
+		DateBox dobDateBox = new DateBox();
+		layoutPanel.add(dobDateBox);
+		layoutPanel.setWidgetLeftWidth(dobDateBox, 80.0, Unit.PX, 150.0, Unit.PX);
+		layoutPanel.setWidgetTopHeight(dobDateBox, 118.0, Unit.PX, 28.0, Unit.PX);
+	}
